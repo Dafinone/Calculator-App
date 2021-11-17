@@ -1,0 +1,55 @@
+{% extends "structure.html" %}
+
+{% block title %}Data Science{% endblock %}
+
+{% block main %}
+
+
+<div class="center">
+    <table>
+        <tr>
+          <th colspan="4" style="background-color: darkcyan;"><h4><strong>DATA SCIENCE CALCULATOR</strong></h4></th>
+        </tr>
+        <tr>
+          <td style="background-color:hsla(0, 36%, 96%, 0.911)" colspan="4"><h3>{{ message }} <br> {{ err_msg }}</h3></td>
+        </tr>
+        <tr>
+          <td><a href="/cls_ds"><button>C</button></a></td>
+          <td><a href="/cancel_ds"><button><strong>x</strong></button></a></td>
+          <td><a href="/show"><button><strong>ADD</strong></button></a></td>
+          <td><a href="/"><button><strong>SC</strong></button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/mean"><button>Mean</button></a></td>
+          <td><a href="/median"><button>Median</button></a></td>
+          <td><a href="/mode"><button>Mode</button></a></td>
+          <td><a href="/skew"><button>Skew</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/seven_ds"><button>7</button></a></td>
+          <td><a href="/eight_ds"><button>8</button></a></td>
+          <td><a href="/nine_ds"><button>9</button></a></td>
+          <td><a href="/var"><button>Var.</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/four_ds"><button>4</button></a></td>
+          <td><a href="/five_ds"><button>5</button></a></td>
+          <td><a href="/six_ds"><button>6</button></a></td>
+          <td><a href="/std"><button>STD</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/one_ds"><button>1</button></a></td>
+          <td><a href="/two_ds"><button>2</button></a></td>
+          <td><a href="/three_ds"><button>3</button></a></td>
+          <td><a href="/cov"><button>Cv.</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/prob"><button>Prob.</button></a></td>
+          <td><a href="/zero_ds"><button>0</button></a></td>
+          <td><a href="/dot_ds"><button>.</button></a></td>
+          <td><a href="/stderr"><button>St.Err</button></a></td>
+        </tr>
+    </table>
+</div>
+
+{% endblock main %}

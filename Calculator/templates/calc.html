@@ -1,0 +1,55 @@
+{% extends "structure.html" %}
+
+{% block title %}DashBoard{% endblock %}
+
+{% block main %}
+
+
+<div class="center">
+    <table>
+        <tr>
+          <th colspan="4" style="background-color: darkcyan;"><h4><strong>STANDARD CALCULATOR</strong></h4></th>
+        </tr>
+        <tr>
+          <td style="background-color:hsla(0, 36%, 96%, 0.911)" colspan="4"><h3>{{ message }}</h3></td>
+        </tr>
+        <tr>
+          <td><a href="/percent"><button>%</button></a></td>
+          <td><a href="/cls"><button><strong>C</strong></button></a></td>
+          <td><a href="/cancel"><button><strong>x</strong></button></a></td>
+          <td><a href="/ds"><button><strong>DS</strong></button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/over_x"><button>1/x</button></a></td>
+          <td><a href="/sq_x"><button>x2</button></a></td>
+          <td><a href="/sqrt"><button>/x</button></a></td>
+          <td><a href="/div"><button>÷</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/seven"><button>7</button></a></td>
+          <td><a href="/eight"><button>8</button></a></td>
+          <td><a href="/nine"><button>9</button></a></td>
+          <td><a href="/mult"><button>*</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/four"><button>4</button></a></td>
+          <td><a href="/five"><button>5</button></a></td>
+          <td><a href="/six"><button>6</button></a></td>
+          <td><a href="/subt"><button>-</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/one"><button>1</button></a></td>
+          <td><a href="/two"><button>2</button></a></td>
+          <td><a href="/three"><button>3</button></a></td>
+          <td><a href="/add"><button>+</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="/plusminus"><button>+/-</button></a></td>
+          <td><a href="/zero"><button>0</button></a></td>
+          <td><a href="/dot"><button>.</button></a></td>
+          <td><a href="/eq"><button>=</button></a></td>
+        </tr>
+    </table>
+</div>
+
+{% endblock main %}
